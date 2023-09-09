@@ -3,11 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto</title>
+  <title> Text Analyzer </title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header>
+    <h1> Welcome to text-analyzer! </h1>
+    <p> Write to get all the information related to your text </p>
+  </header>
+
+  <section>
+    <div>
+      <ul>
+        <li class="userInfo__chip" data-testid="word-count"> word count: 0</li>
+        <li class="userInfo__chip" data-testid="character-count"> character count: 0</li>
+        <li class="userInfo__chip" data-testid="character-no-spaces-count"> character no spaces count: 0</li>
+        <li class="userInfo__chip" data-testid="number-count"> number count:  0</li>
+        <li class="userInfo__chip" data-testid="number-sum"> number sum: 0</li>
+        <li class="userInfo__chip" data-testid="word-length-average"> word length average: 0</li>
+      </ul>
+    </div>
+    <textarea name="user-input"></textarea>
+    <button id="reset-button"> Reset </button>
+  </section>
+
+  <footer>
+    <p>  created By JC </p>
+  </footer>
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
